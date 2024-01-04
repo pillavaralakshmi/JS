@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>JavascriptExp</title>
+    </head>
+<body>
+    <input type="Number"id='fn'/>
+    <input type="Number"id='sn'/>
+    <button ="Submit" onclick="Addition()">Add</button>
+    <button ="Submit" onclick="Multiplication()">Multipliy</button>
+    <button ="Submit" onclick="Subtraction()">Sub</button>
+    <button ="Submit" onclick="Division()">Div</button>
+<script>
+    function Addition(){
+        let x= document.getElementById('fn').value;
+        let xValue=parseInt(x);
+        let y= document.getElementById('sn').value;
+        let yValue=parseInt(y);
+        const z=xValue+yValue;
+        alert(z);  
+    } 
+    function Multiplication(){
+        let x= document.getElementById('fn').value;
+        let xValue=parseInt(x);
+        let y= document.getElementById('sn').value;
+        let yValue=parseInt(y);
+        const z=x*y;
+        alert(z);  
+    }
+    function Subtraction(){
+        let x= document.getElementById('fn').value;
+        let xValue=parseInt(x);
+        let y= document.getElementById('sn').value;
+        let yValue=parseInt(y);
+        const z=x-y;
+        alert(z);  
+    }
+    function Division(){
+        let x= document.getElementById('fn').value;
+        let xValue=parseInt(x);
+        let y= document.getElementById('sn').value;
+        let yValue=parseInt(y);
+        const z=x/y;
+        alert(z);  
+    }
+</script>
+</body>
+</html>
+
