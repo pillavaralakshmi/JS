@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>banking</h1>
+    <button onclick="details()">AccountDetails</button>
+    <button onclick="creAmount()">creditamount</button>
+    <button onclick="debAmount()">debitAmount</button>
+</body>
+<script>
+
+    let actualAmount=5000;
+    window.alert("actualamount "+actualAmount);
+
+    function creAmount(){
+    let creditAmount=+prompt("enter creditAmount");
+    let totalAmount=actualAmount+creditAmount;
+    window.alert("your credit amount is successful done   "+totalAmount);
+    window.alert("thank you!!");
+}
+
+    function debAmount(){
+    let debitAmount=+prompt("enter debitAmount");
+    if(debitAmount>actualAmount){
+        window.alert("you have insufficient amount in your account....");
+    }
+    else{
+        window.alert("you have sufficient amount now you can withdraw")
+        let newAmount=actualAmount-debitAmount;
+        window.alert(newAmount);
+        window.alert("thank you!!");
+    }
+    }
+    
+    </script>
+</html>
